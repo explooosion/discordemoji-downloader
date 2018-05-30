@@ -1,0 +1,7 @@
+# folder
+node_modules
+api
+img/*
+
+# file
+yarn-error.log
