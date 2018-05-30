@@ -7,8 +7,8 @@ const {
     FILE_emoji,
 } = require('./config')
 
-// Timeout deley for request, avoid to socket error
-const DELEY = 30
+// Delay for request, avoid to socket error
+const DELAY = 30
 
 // Read api from local
 const categories = JSON.parse(fs.readFileSync(`api/${FILE_categories}`))
@@ -55,7 +55,7 @@ function Download(index) {
             process.exit()
         }
 
-    }, DELEY)
+    }, DELAY)
 }
 
 /**
