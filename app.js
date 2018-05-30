@@ -8,7 +8,7 @@ const {
 } = require('./config')
 
 // Timeout deley for request, avoid to socket error
-const DELEY = 10
+const DELEY = 30
 
 // Read api from local
 const categories = JSON.parse(fs.readFileSync(`api/${FILE_categories}`))
