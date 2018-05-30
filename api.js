@@ -9,16 +9,17 @@ const {
     FILE_emoji,
 } = require('./config')
 
+// Create api directory
 if (!fs.existsSync('api')) fs.mkdirSync('api')
 
+// Save cate api
 if (!fs.existsSync(`api/${FILE_categories}`)) {
-    signale.pending('Download categories ...')
+    signale.pending('Getting categories ...')
     request(URL_categories).pipe(fs.createWriteStream(`api/${FILE_categories}`))
-    signale.success('Finish.');
 }
 
+// Save emoji api
 if (!fs.existsSync(`api/${FILE_emoji}`)) {
-    signale.pending('Download emoji api ...')
+    signale.pending('Getting emoji api ...')
     request(URL_emoji).pipe(fs.createWriteStream(`api/${FILE_emoji}`))
-    signale.success('Finish.');
 }

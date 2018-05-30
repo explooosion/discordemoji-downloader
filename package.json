@@ -1,6 +1,6 @@
 {
   "name": "discordemoji-downloader",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Download discord emoji from api with node.js.",
   "main": "index.js",
   "scripts": {
@@ -12,16 +12,19 @@
     "type": "git",
     "url": "git+https://github.com/explooosion/discordemoji-downloader.git"
   },
-  "keywords": [],
+  "keywords": [
+    "discord",
+    "emoji",
+    "download"
+  ],
   "author": "Robby <ta7382@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/explooosion/discordemoji-downloader/issues"
   },
   "homepage": "https://github.com/explooosion/discordemoji-downloader#readme",
   "dependencies": {
     "request": "^2.87.0",
-    "signale": "^1.1.0",
-    "uuid": "^3.2.1"
+    "signale": "^1.1.0"
   }
 }
