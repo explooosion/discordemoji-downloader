@@ -19,7 +19,7 @@ yarn start
 
 ## Clean cache
 
-Remove api file:
+Remove api files:
 
 - categories.json
 - emoji.json
